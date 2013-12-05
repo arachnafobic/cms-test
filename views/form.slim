@@ -1,0 +1,11 @@
+table
+  tr
+    td
+      label for="title" Title:
+    td
+      input.title type="text" name="page[title]" value="#{@page.title}" size="32"
+  tr
+    td
+      label for="content" Content:
+    td
+      textarea.content name="page[content]" rows="12" cols="72" ==@page.content

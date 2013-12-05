@@ -1,0 +1,8 @@
+h1 Edit Page
+h2 #{@page.permalink}
+form action="/pages/#{@page.id}" method="POST"
+  input type="hidden" name="_method" value="PUT"
+  fieldset
+    legend Edit page
+    == slim :form
+  input.button type="submit" value="Update"
